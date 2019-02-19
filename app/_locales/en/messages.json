@@ -14,5 +14,19 @@
   "browserActionTitle": {
     "message": "Test WebExtension Releases",
     "description": "The title of the browser action button"
+  },
+  "notificationTitle": {
+    "message": "Hello, World!",
+    "description": "The title of the notification"
+  },
+  "notificationMessage": {
+    "message": "This is a test extension. v$version$ is installed.",
+    "description": "The title of the notification",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.0.1"
+      }
+    }
   }
 }
