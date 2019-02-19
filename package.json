@@ -4,7 +4,7 @@
   "description": "Testing GitHub Releases for WebExtensions",
   "main": "app/manifest.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "dev": "webextension-toolbox dev",
     "build": "webextension-toolbox build",
     "lint:firefox": "./scripts/clean-env web-ext lint -w -s ./dist/firefox",
