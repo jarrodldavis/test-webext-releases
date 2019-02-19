@@ -1,0 +1,24 @@
+{
+  "name": "@jarrodldavis/test-webext-releases",
+  "version": "0.0.1",
+  "description": "Testing GitHub Releases for WebExtensions",
+  "main": "app/manifest.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarrodldavis/test-webext-releases.git"
+  },
+  "keywords": [
+    "webext",
+    "web-ext",
+    "github-releases"
+  ],
+  "author": "Jarrod Davis <developer@jarrodldavis.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarrodldavis/test-webext-releases/issues"
+  },
+  "homepage": "https://github.com/jarrodldavis/test-webext-releases#readme"
+}
