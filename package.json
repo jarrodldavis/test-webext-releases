@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/jarrodldavis/test-webext-releases#readme",
   "devDependencies": {
+    "@jarrodldavis/remark-changelog-version-bump": "^0.1.0",
+    "remark-cli": "^6.0.1",
     "web-ext": "^2.9.3",
     "webextension-toolbox": "latest"
   }
