@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jarrodldavis/test-webext-releases#readme",
   "devDependencies": {
+    "web-ext": "^2.9.3",
     "webextension-toolbox": "latest"
   }
 }
