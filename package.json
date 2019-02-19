@@ -4,7 +4,9 @@
   "description": "Testing GitHub Releases for WebExtensions",
   "main": "app/manifest.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jarrodldavis/test-webext-releases/issues"
   },
-  "homepage": "https://github.com/jarrodldavis/test-webext-releases#readme"
+  "homepage": "https://github.com/jarrodldavis/test-webext-releases#readme",
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
 }
