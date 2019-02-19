@@ -81,4 +81,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-
+# webextension-toolbox
+dist/
+packages/

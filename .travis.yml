@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- stable
+cache: npm
+script:
+- npm run build firefox
+- npm run lint:firefox
+- npm run build chrome
+before_deploy:
+- rm -vf packages/*.firefox.xpi.zip
+- npm run submit:firefox
+deploy:
+  provider: releases
+  api_key:
+    secure: i5ew1ehUCK7G82gm3ETUPy3dXRxiMhmRK/7ERbtLkZmpaReSH/Lvwe0CMn8P9461I9qmU2faJKEMiroirAhbIFGoLy3uZaLorW/EboWTyQWu8I0x2P9gJ7izyEvasGv4zKA9jrwlXkI1MgLBZIHAWZeEyp3H0NdKB5fT8W28Kad8EjRGXf0p8FgH0bxUTp0nN9a6mYx/a2+DwJHGB9ekcBklx4ZXrVvfmSpo9LeklWKVx1JNwQ51x1WlKiEZkGFIvmNSWzbXJxbIlosiJPXEIo9GRhKruB4RQF9RkA8lyixxAqgFXD25GHxLS33ypztJy4b9560gB6P9VXSFRJktwvz7W0Z09/ibt4n6XtYJiHvoGxt+BtcPaI8L6v0gWV9uilLNayBexBAyhTHjvx9ewoCHP8opxHi48H5QJREt5jXPCywSnAEbJDUrhzzIx5F45bHL22eIY29I3uHgI8vjhEqir58uck/KYtzzIEcF8/QxAe4zzZEJbbs0qPSOuHurGZxn1Nn+unTpJ2cnna4z9NtCmI8v23Th0ESBjQQCK9rCpT9huJLdE2pCfeZvlJPm3ttqy181CPNvxGkYRLG68ka+jDcOEeadSkXPirbqdU8wwSA+CpaBy/cHVTgpFDFYjC0c+HYYesXpJGGc30Dqt339nmjrFAxqUxlLPl/E1GU=
+  skip_cleanup: true
+  file_glob: true
+  file: packages/*
+  on:
+    repo: jarrodldavis/test-webext-releases
+    tags: true
