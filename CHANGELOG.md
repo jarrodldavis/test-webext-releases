@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0]
+
 ### Added
 
 #### Features and Fixes
@@ -26,4 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#4]: https://github.com/jarrodldavis/test-webext-releases/issues/4
 
-[Unreleased]: https://github.com/jarrodldavis/test-webext-releases/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/jarrodldavis/test-webext-releases/compare/v0.1.0...HEAD
+
+[0.1.0]: https://github.com/jarrodldavis/test-webext-releases/compare/v0.0.1...v0.1.0

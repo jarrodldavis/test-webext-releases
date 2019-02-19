@@ -1,6 +1,6 @@
 {
   "name": "@jarrodldavis/test-webext-releases",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Testing GitHub Releases for WebExtensions",
   "main": "app/manifest.json",
   "scripts": {
