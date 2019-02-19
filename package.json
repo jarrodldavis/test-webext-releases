@@ -8,7 +8,11 @@
     "dev": "webextension-toolbox dev",
     "build": "webextension-toolbox build",
     "lint:firefox": "./scripts/clean-env web-ext lint -w -s ./dist/firefox",
-    "submit:firefox": "web-ext sign -s ./dist/firefox/ -a ./packages/"
+    "submit:firefox": "web-ext sign -s ./dist/firefox/ -a ./packages/",
+    "preversion": "./scripts/version-bump/run-preversion",
+    "version": "./scripts/version-bump/run-version",
+    "postversion": "./scripts/version-bump/run-postversion",
+    "mergeversion": "./scripts/version-bump/run-mergeversion"
   },
   "repository": {
     "type": "git",
