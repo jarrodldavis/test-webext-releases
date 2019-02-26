@@ -1,0 +1,21 @@
+container:
+  image: node:latest
+
+install_task:
+  node_modules_cache:
+    folder: node_modules
+    fingerprint_script: cat package-lock.json
+    populate_script: npm ci
+
+firefox_task:
+  depends_on:
+    - install
+  build_script:
+    - npm run build firefox
+    - npm run lint:firefox
+
+chrome_task:
+  depends_on:
+    - install
+  build_script:
+    - npm run build chrome
